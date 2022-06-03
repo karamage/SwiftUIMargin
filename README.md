@@ -3,8 +3,6 @@
 SwiftUI-Margin adds a margin() viewModifier to a SwiftUI view. 
 You will be able to layout the margins in a CSS/Flutter-like.
 
-### ScreenShot
-
 ## Install
 
 ### SwiftPM
