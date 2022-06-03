@@ -22,3 +22,9 @@ struct MarginModifier: ViewModifier {
         }
     }
 }
+
+extension View {
+    public func margin(top: CGFloat = 0, bottom: CGFloat = 0, left: CGFloat = 0, right: CGFloat = 0) -> some View {
+        self.modifier(MarginModifier(top: top, bottom: bottom, left: left, right: right))
+    }
+}
