@@ -20,7 +20,14 @@ import SwiftUIMargin
 struct ContentView: View {
     
     var body: some View {
-        // TODO
+        VStack(alignment: .leading) {
+            Text("SwiftUI-Margin")
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .margin(left: 8)
+            Text("Set margin layout")
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .margin(top: 8, left: 8)
+        }
     }
 }
 ```
