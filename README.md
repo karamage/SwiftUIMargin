@@ -1,4 +1,5 @@
 # SwiftUI-Margin
+[![CI](https://github.com/karamage/SwiftUIMargin/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/karamage/SwiftUIMargin/actions/workflows/main.yml)
 
 SwiftUI-Margin adds a margin() viewModifier to a SwiftUI view. 
 You will be able to layout the margins in a CSS/Flutter-like.
