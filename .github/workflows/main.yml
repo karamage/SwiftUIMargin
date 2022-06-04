@@ -14,12 +14,16 @@ jobs:
     runs-on: macOS-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Build
-      run: swift build -v
+    - name: Select Xcode version # Xcode 13.2 を使う
+      run: sudo xcode-select -s '/Applications/Xcode_13.2.app/Contents/Developer'
+    - name: Show Xcode version
+      run: xcodebuild -version
+    - name: Build # シミュレーター向けにビルド
+      run: xcodebuild -sdk iphonesimulator -configuration Debug build 
 
-  test:
-    runs-on: macOS-latest
-    steps:
-    - uses: actions/checkout@v2
-    - name: Test
-      run: swift test -v
+#  test:
+#    runs-on: macOS-latest
+#    steps:
+#    - uses: actions/checkout@v2
+#    - name: Test
+#      run: swift test -v
