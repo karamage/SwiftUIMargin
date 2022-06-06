@@ -1,10 +1,10 @@
 import SwiftUI
 
 struct MarginModifier: ViewModifier {
-    var top = 0.0
-    var bottom = 0.0
-    var left = 0.0
-    var right = 0.0
+    let top: CGFloat
+    let bottom: CGFloat
+    let left: CGFloat
+    let right: CGFloat
     
     func body(content: Content) -> some View {
         VStack {
