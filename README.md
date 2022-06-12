@@ -15,7 +15,7 @@ https://github.com/karamage/SwiftUIMargin.git
 ```
 
 ## Usage
-```
+```Swift
 import SwiftUI
 import SwiftUIMargin
 
